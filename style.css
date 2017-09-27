@@ -24,9 +24,27 @@ body {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video {
+    width: 40%;
+    height: 45%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 .trigger{
