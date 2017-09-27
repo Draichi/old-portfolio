@@ -9,8 +9,7 @@ body {
 }
 
 #fullpage section {
-    height: 80vh;
-    padding: 10vh 0 10vh 0;
+    height: 100vh;
 }
 
 #fullpage section h1 {
@@ -25,19 +24,20 @@ body {
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
 .video-container {
     display: flex;
     justify-content: space-around;
+    padding-top: 5%;
 }
 
 .video {
-    width: 30%;
-    height: 45%;
+    min-width: 40vw;
+    min-height: 45vh;
 }
 
 .flex-container {
@@ -46,6 +46,11 @@ img {
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
     justify-content: space-around;
+    padding-top: 5%;
+}
+
+figcaption {
+    text-align: center;
 }
 
 .trigger{
