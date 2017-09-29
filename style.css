@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Helvetica, Verdana, sans-serif;
 }
 
 #fullpage {
@@ -24,8 +24,8 @@ body {
 }
 
 .header-1, .header-2, .header-3 {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -55,6 +55,7 @@ figure {
 
 figcaption {
     padding-top: 10%;
+    font-size: x-large;
 }
 
 .trigger{
@@ -99,7 +100,7 @@ figcaption {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 80vw;
+  max-width: 60vw;
   position: relative;
   margin: auto;
 }
@@ -110,8 +111,8 @@ figcaption {
 }
 
 .slider-img {
-    height: 50vh;
-    width: 50vw;
+    height: 80vh;
+    width: 60vw;
 }
 
 /* Next & previous buttons */
