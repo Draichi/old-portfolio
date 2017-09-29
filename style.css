@@ -49,8 +49,12 @@ img {
     padding-top: 5%;
 }
 
-figcaption {
+figure {
     text-align: center;
+}
+
+figcaption {
+    padding-top: 10%;
 }
 
 .trigger{
