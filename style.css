@@ -1,4 +1,4 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: Helvetica, Verdana, sans-serif;
@@ -23,6 +23,12 @@ body {
     
 }
 
+.text-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10vh;
+}
+
 .header-1, .header-2, .header-3 {
     width: 100px;
     height: 100px;
@@ -32,12 +38,12 @@ body {
 .video-container {
     display: flex;
     justify-content: space-around;
-    padding-top: 5%;
+    padding-top: 5vh;
 }
 
 .video {
-    min-width: 40vw;
-    min-height: 45vh;
+    min-width: 35vw;
+    min-height: 40vh;
 }
 
 .flex-container {
@@ -46,51 +52,33 @@ body {
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding-top: 5%;
+    padding-top: 10vh;
+    max-height: 30vh;
 }
 
 figure {
     text-align: center;
+    padding: 0 5vw;
 }
 
 figcaption {
-    padding-top: 10%;
+    padding-top: 5vh;
     font-size: x-large;
 }
 
-.trigger{
-    width: 200px;
-    height: 200px;
-    border: 20px solid #ffffff;
-    background: #07F2F2;
-}
-
-.box {
-    display: inline-block;
-    background: pink;
-    width: 200px;
-    height: 200px;
-    transition: transform 1s ease-in;
-}
-
-.trigger:hover .box {
-    transform: translate(200px, 150px) rotate(20deg);
+#fullpage section:nth-child(4) {
+    background-color: #F2055C;
 }
 
 #fullpage section:nth-child(1) {
-    background-color: #F2055C;
-    
-}
-
-#fullpage section:nth-child(2) {
     background: #07F2F2;
 }
 
-#fullpage section:nth-child(3) {
+#fullpage section:nth-child(2) {
     background: #05F26C;
 }
 
-#fullpage section:nth-child(4) {
+#fullpage section:nth-child(3) {
     background: #EAF205;
 }
 
@@ -103,6 +91,7 @@ figcaption {
   max-width: 60vw;
   position: relative;
   margin: auto;
+  padding-top: 5vh;
 }
 
 .mySlides {
@@ -155,7 +144,6 @@ figcaption {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
