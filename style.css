@@ -27,7 +27,8 @@
 .text-header {
     text-align: center;
     text-transform: uppercase;
-    font-size: 10vh;
+    font-size: 9vh;
+    padding: 3vh 0 5vh 0;
 }
 
 .header-1, .header-2, .header-3 {
@@ -39,13 +40,19 @@
 .video-container {
     display: flex;
     justify-content: space-around;
-    padding-top: 5vh;
 }
 
 .video {
     min-width: 35vw;
     min-height: 40vh;
-    box-shadow: 10px 10px 46px -6px rgba(0,0,0,0.75);
+}
+
+.shadow-strong {
+    box-shadow: 0px 18px 46px 1px rgba(0,0,0,0.75);
+}
+
+.shadow {
+    box-shadow: 4px 5px 20px 1px rgba(0,0,0,0.75);
 }
 
 .flex-container {
@@ -54,18 +61,19 @@
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding-top: 10vh;
+    padding-top: 7vh;
     max-height: 30vh;
 }
 
 figure {
     text-align: center;
+    width: 33.20vw;
     padding: 0 5vw;
 }
 
 figcaption {
     padding-top: 5vh;
-    font-size: x-large;
+    font-size: 3vh;
 }
 
 #fullpage section:nth-child(4) {
@@ -97,7 +105,6 @@ figcaption {
   max-width: 60vw;
   position: relative;
   margin: auto;
-  padding-top: 5vh;
 }
 
 .mySlides {
@@ -106,8 +113,7 @@ figcaption {
 }
 
 .slider-img {
-    height: 80vh;
-    width: 60vw;
+    max-height: 60vh;
 }
 
 /* Next & previous buttons */
