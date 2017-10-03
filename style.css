@@ -58,8 +58,8 @@
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -webkit-flex-direction: row;
+    flex-direction: row;
     justify-content: space-around;
     padding-top: 7vh;
     max-height: 30vh;
