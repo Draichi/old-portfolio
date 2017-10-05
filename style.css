@@ -58,10 +58,9 @@
 .flex-container {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 7vh;
+    padding-top: 10vh;
     max-height: 30vh;
 }
 

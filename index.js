@@ -1,3 +1,7 @@
+AOS.init({
+  duration: 1200
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

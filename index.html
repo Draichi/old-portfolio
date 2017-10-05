@@ -6,25 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#ffffff">
 		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-		
+		<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 		
 	</head>
 	<body>
 		<div id="fullpage">
 			<section>
-				<h2 class="text-header">lucas => front-end dev</h2>
-				<div class="video-container">
-					<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/TkvOkP32MVc"></iframe>
-				</div>
+				<h2 class="text-header">Lucas : front end</h2>
 				<div class="flex-container">
 					<figure>
 						<img class="icone shadow" src="src/img/il13.jpg" alt="">
 						<figcaption>CSS => Parallax, SASS, Mixins, Bootstrap</figcaption>
 					</figure>
-					<figure>
-						<img class="icone shadow" src="src/img/il15.jpg" alt="">
-						<figcaption>JS => Vue.js, ES6, jQuery, Gulp, Node.js</figcaption>
-					</figure>
+						<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/TkvOkP32MVc"></iframe>
 					<figure>
 						<img class="icone shadow" src="src/img/il17.jpg" alt="">
 						<figcaption>Photoshop, UX, Ruby on Rails, Git</figcaption>
@@ -33,73 +27,73 @@
 			</section>
 
 			<section>
-				<h2 class="text-header">portfolio</h2>
-				<div class="slideshow-container">
-					<div class="mySlides fade">
-						<img src="/src/img/ibm20.png" class="slider-img">
-						<div class="text">New home page of IBM Digital</div>
+				<div data-aos="fade-up">
+					<h2 class="text-header">portfolio</h2>
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<img src="/src/img/ibm20.png" class="slider-img">
+							<div class="text">New home page of IBM Digital</div>
+						</div>
+						<div class="mySlides fade">
+							<img src="/src/img/ibm21.jpg" class="slider-img">
+							<div class="text">IBM Registration Forms</div>
+						</div>
+						<div class="mySlides fade">
+							<img src="/src/img/ibm19.png" class="slider-img">
+							<div class="text">Caption Three</div>
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					</div>
-				
-					<div class="mySlides fade">
-						<img src="/src/img/ibm21.jpg" class="slider-img">
-						<div class="text">IBM Registration Forms</div>
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span> 
+						<span class="dot" onclick="currentSlide(2)"></span> 
+						<span class="dot" onclick="currentSlide(3)"></span> 
 					</div>
-				
-					<div class="mySlides fade">
-						<img src="/src/img/ibm19.png" class="slider-img">
-						<div class="text">Caption Three</div>
-					</div>
-				
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>
-				
-				<div style="text-align:center">
-					<span class="dot" onclick="currentSlide(1)"></span> 
-					<span class="dot" onclick="currentSlide(2)"></span> 
-					<span class="dot" onclick="currentSlide(3)"></span> 
 				</div>
 			</section>
 
 			<section>
-				<div>
-					<h2 class="text-header">code sample</h2>
-				</div>
-				<div class="html-pretty">
-					<pre class="prettyprint">
-		var slideIndex = 1;
-		showSlides(slideIndex);
-		
-		//Vue.js sample
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			if (n > slides.length) {slideIndex = 1} 
-			if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none"; 
+				<div data-aos="fade-up">
+						<div>
+							<h2 class="text-header">code sample</h2>
+						</div>
+						<div class="html-pretty">
+							<pre class="prettyprint">
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			//Vue.js sample
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
 			}
-			for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");		
+	
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
 			}
-			slides[slideIndex-1].style.display = "block"; 
-			dots[slideIndex-1].className += " active";
-		}
-					</pre>
+	
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1} 
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none"; 
+				}
+				for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");		
+				}
+				slides[slideIndex-1].style.display = "block"; 
+				dots[slideIndex-1].className += " active";
+			}
+						</pre>
+					</div>
 				</div>
 			</section>
 			
 			<section>
-				<div class="flex-container footer">
+				<div class="flex-container footer" data-aos="fade-down">
 					<a href="google.com">
 						<figure class="trigger">
 							<figcaption class="text-header"><h3>github</h3></figcaption>							
@@ -116,6 +110,8 @@
 			</section>
 		</div>
 		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+		
+		<script src="node_modules/aos/dist/aos.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
