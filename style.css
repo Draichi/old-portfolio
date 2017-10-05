@@ -233,3 +233,16 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     font-size: 6vw;
     text-transform: uppercase;
 }
+
+.animacao {
+    transition: transform 400ms ease-in-out;
+}
+
+.trigger:hover .animacao {
+    transform: scale(1.5);
+}
+
+a {
+    color: #340040;
+    text-decoration: none;
+}
