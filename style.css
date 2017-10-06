@@ -215,12 +215,12 @@ img.hover-shadow {
 }
 
 .slider-img {
-    max-width: 15vw;
+    max-height: 15vw;
 }
 
 .modal-img {
-    max-height: 80vh;
-    padding: 10vh;
+    max-height: 98vh;
+    padding: 1vh;
 }
 /*end lightbox*/
 
