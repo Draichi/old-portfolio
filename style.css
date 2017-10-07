@@ -65,7 +65,7 @@ figcaption a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 20vh;
     max-height: 30vh;
 }
 
