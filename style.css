@@ -219,8 +219,15 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
+.flex-portfolio {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
 .slider-img {
-    max-height: 15vw;
+    max-height: 23vh;
+    margin: 1.5vh;
 }
 
 .modal-img {
