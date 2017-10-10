@@ -31,10 +31,6 @@
     padding: 3vh 0 5vh 0;
 }
 
-.ancoras-header {
-
-}
-
 .icone {
     width: 10vh;
     height: 10vh;
@@ -69,7 +65,7 @@ figcaption a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 20vh;
+    padding-top: 15vh;
     max-height: 30vh;
 }
 
