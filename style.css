@@ -235,6 +235,7 @@ img.hover-shadow {
 
 .modal-img {
     max-height: 98vh;
+    max-width: 90vw;
     padding: 1vh;
 }
 /*end lightbox*/
@@ -343,5 +344,9 @@ a {
         font-size: .5rem;
         left: 1.5%;
         padding-top: 5vh;
+    }
+
+    .footer .text-header {
+        padding: 3vh 0 5vh 0;
     }
 }
