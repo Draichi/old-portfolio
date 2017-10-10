@@ -27,8 +27,12 @@
 .text-header {
     text-align: center;
     text-transform: uppercase;
-    font-size: 9vh;
+    font-size: 5vw;
     padding: 3vh 0 5vh 0;
+}
+
+.ancoras-header {
+
 }
 
 .icone {
@@ -77,7 +81,7 @@ figure {
 
 figcaption {
     padding-top: 5vh;
-    font-size: 3vh;
+    font-size: 2vw;
 }
 
 #fullpage section:nth-child(4) {
@@ -140,6 +144,7 @@ figcaption {
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    z-index: 1;
 }
 
 .close:hover,
@@ -227,8 +232,8 @@ img.hover-shadow {
 }
 
 .slider-img {
-    max-height: 23vh;
-    max-width: 20vw;
+    max-height: 20vh;
+    max-width: 19vw;
     margin: 1vh;
 }
 
@@ -276,7 +281,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .html-pretty {
     position: absolute;
-    left: 28%;
+    left: 33%;
     font-size: .9vw;
     
 }
@@ -301,4 +306,46 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 a {
     color: #340040;
     text-decoration: none;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 500px) {
+
+    .flex-container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30vh;
+    }
+    
+    .ancoras-header {
+        font-size: 4vw;
+    }
+
+    figure {
+        width: 90vw;
+    }
+
+    .video {
+        min-height: initial;
+        min-width: initial;
+    }
+
+    .text-header {
+        padding: 3vh 0 0 0;
+    }
+
+    .slider-img {
+        margin: initial;
+    }
+
+    .flex-portfolio {
+        padding-top: 2vh;
+    }
+
+    .html-pretty {
+        font-size: .5rem;
+        left: 1.5%;
+        padding-top: 5vh;
+    }
 }

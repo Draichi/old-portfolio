@@ -16,12 +16,12 @@
 				<div class="flex-container">
 					<figure>
 						<img class="icone shadow" src="src/img/icon_left.png" alt="experiences">
-						<figcaption>3° year of Computer Engineering, 5 years experience, IBM, Globo, <a href="http://officemall.com.br" target="_blank">Office Mall</a></figcaption>
+						<figcaption class="ancoras-header">3° year of Computer Engineering, 5 years experience, IBM, Globo, <a href="http://officemall.com.br" target="_blank">Office Mall</a></figcaption>
 					</figure>
 						<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/TkvOkP32MVc"></iframe>
 					<figure>
 						<img class="icone shadow" src="src/img/icon_right.png" alt="knowleges">
-						<figcaption>Ruby on Rails, Vue.js, CSS3, ES6, UX, Git, SEO, <a href="https://www.mudamos.org/projetos" target="_blank">recent project</a></figcaption>
+						<figcaption class="ancoras-header">Ruby on Rails, Vue.js, CSS3, ES6, UX, Git, SEO, <a href="https://www.mudamos.org/projetos" target="_blank">recent project</a></figcaption>
 					</figure>
 				</div>
 			</section>
@@ -135,38 +135,39 @@
 						</div>
 						<div class="html-pretty">
 							<pre class="prettyprint">
-			// This is a sample of a vue.js component
-			export default {
-				components: {
-					'meu-painel': Painel,
-					'imagem-responsiva': ImagemResponsiva,
-					'meu-botao': Botao
-				},
-				data() {
-					return {
-					titulo: 'Projeto visa o uso de diretivas, components, e integração com API.',					
-					}
-				},
-				methods:{
-					remove(foto){
-						this.service.apaga(foto._id)
-							.then(() => {
-								let indice = this.fotos.indexOf(foto);
-								this.fotos.splice(indice, 1);
-								this.mensagem = 'Foto removida com sucesso';
-							}, err => this.mensagem = 'Não foi possivel remover a foto');        
-					}
+								
+	// This is a sample of a vue.js component
+	export default {
+		components: {
+			'meu-painel': Painel,
+			'imagem-responsiva': ImagemResponsiva,
+			'meu-botao': Botao
+		},
+		data() {
+			return {
+			titulo: 'Projeto visa o uso de diretivas',		
+			}
+		},
+		methods:{
+			remove(foto){
+				this.service.apaga(foto._id)
+					.then(() => {
+						let indice = this.fotos.indexOf(foto);
+						this.fotos.splice(indice, 1);
+						this.mensagem = 'Foto removida com sucesso';
+					}, err => this.mensagem = 'Não foi possivel remover');   	
+			}
+		}
+		computed: { 
+			fotosComFiltro() {
+				if(this.filtro) {
+					let exp = new RegExp(this.filtro.trim(),'i');
+						return this.fotos.filter(foto => exp.test(foto.titulo));
+				} else {
+					return this.fotos;
 				}
-				computed: { 
-					fotosComFiltro() {
-						if(this.filtro) {
-							let exp = new RegExp(this.filtro.trim(),'i');
-								return this.fotos.filter(foto => exp.test(foto.titulo));
-						} else {
-							return this.fotos;
-						}
-					}
-				}
+			}
+		}
 						</pre>
 					</div>
 				</div>
