@@ -278,7 +278,8 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 .html-pretty {
     position: absolute;
-    left: 33%;
+    left: 30%;
+    right: 30%;
     font-size: .9vw;
     
 }
@@ -343,6 +344,7 @@ a {
     .html-pretty {
         font-size: .5rem;
         left: 1.5%;
+        right: 1.5%;
         padding-top: 5vh;
     }
 
