@@ -8,6 +8,7 @@
 		<meta name="theme-color" content="#07F2F2">
 		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 		<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+		<title>Lucas Draichi</title>
 		
 	</head>
 	<body>
@@ -136,28 +137,21 @@
 						</div>
 						<div class="html-pretty">
 							<pre class="prettyprint">
-
+	// var pagamento = req.body
 	var pagamento = req.body;
 	console.log('Procesing payment');
 
 	pagamento.status = 'CRIATED';
 	pagamento.data = new Date;
+	// var pagamento = req.body
 
-	var connection = app.persistencia.connectionFactory();
-	var PagamentosDAO = new app.persistencia.PagamentosDAO(connection);
-
-	PagamentosDAO.salva(pagamento, (erro,resultado) => {
 		if (erro) {
-			console.log('Erro ao inserir no banco: ' + erro);
 			res.status(500).send(erro);
-
+			// var pagamento = req.body
 		} else {
-			console.log('Pagamento Criado: ' + resultado);
-			res.location('/pagamentos/pagamento/'+resultado.insertId);
 			res.status(201).json(pagamento);
 		}
 	});
-
 						</pre>
 					</div>
 				</div>
