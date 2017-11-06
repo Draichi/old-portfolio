@@ -333,6 +333,10 @@ a {
 /*MOBILE*/
 @media screen and (max-width: 500px) {
 
+    .text-header {
+        font-size: 1.45rem;
+    }
+
     .flex-container {
         flex-direction: column;
         justify-content: space-around;
@@ -341,7 +345,7 @@ a {
     }
     
     .ancoras-header {
-        font-size: 4vw;
+        font-size: 1.2rem;
     }
 
     figure {
@@ -363,7 +367,8 @@ a {
     }
 
     .slider-img {
-        margin: initial;
+        height: 10vh;
+        width: 25vw;
     }
 
     .flex-portfolio {
@@ -371,7 +376,7 @@ a {
     }
 
     .html-pretty {
-        font-size: .5rem;
+        font-size: .9rem;
         left: 1.5%;
         right: 1.5%;
         padding-top: 5vh;

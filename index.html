@@ -136,39 +136,28 @@
 						</div>
 						<div class="html-pretty">
 							<pre class="prettyprint">
-								
-	// This is a sample of a vue.js component
-	export default {
-		components: {
-			'meu-painel': Painel,
-			'imagem-responsiva': ImagemResponsiva,
-			'meu-botao': Botao
-		},
-		data() {
-			return {
-			titulo: 'ADD, REMOVE, CHANGE OU FILTER AN IMAGE',		
-			}
-		},
-		methods:{
-			remove(foto){
-				this.service.apaga(foto._id)
-					.then(() => {
-						let indice = this.fotos.indexOf(foto);
-						this.fotos.splice(indice, 1);
-						this.mensagem = 'Foto removida com sucesso';
-					}, err => this.mensagem = 'Não foi possivel remover');   	
-			}
+
+	var pagamento = req.body;
+	console.log('Procesing payment');
+
+	pagamento.status = 'CRIATED';
+	pagamento.data = new Date;
+
+	var connection = app.persistencia.connectionFactory();
+	var PagamentosDAO = new app.persistencia.PagamentosDAO(connection);
+
+	PagamentosDAO.salva(pagamento, (erro,resultado) => {
+		if (erro) {
+			console.log('Erro ao inserir no banco: ' + erro);
+			res.status(500).send(erro);
+
+		} else {
+			console.log('Pagamento Criado: ' + resultado);
+			res.location('/pagamentos/pagamento/'+resultado.insertId);
+			res.status(201).json(pagamento);
 		}
-		computed: { 
-			fotosComFiltro() {
-				if(this.filtro) {
-					let exp = new RegExp(this.filtro.trim(),'i');
-						return this.fotos.filter(foto => exp.test(foto.titulo));
-				} else {
-					return this.fotos;
-				}
-			}
-		}
+	});
+
 						</pre>
 					</div>
 				</div>
