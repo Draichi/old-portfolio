@@ -160,6 +160,11 @@ figcaption {
     max-height: 98vh;
     max-width: 90vw;
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     margin: auto;
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -378,8 +383,8 @@ a {
 
     .html-pretty {
         font-size: .7rem;
-        left: 1.5%;
-        right: 1.5%;
+        left: 5%;
+        right: 5%;
         padding-top: 10vh;
     }
 
