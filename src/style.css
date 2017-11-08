@@ -75,6 +75,15 @@ figure {
     padding: 5vh 5vw;
 }
 
+.knowleges, .skills {
+    width: 33.20vw;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
 figcaption {
     padding-top: 5vh;
     font-size: 2vw;
@@ -352,6 +361,10 @@ a {
     }
 
     figure {
+        width: 90vw;
+    }
+
+    .knowleges {
         width: 90vw;
     }
 

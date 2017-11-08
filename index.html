@@ -16,15 +16,34 @@
 			<section>
 				<h2 class="text-header">i solve problems</h2>
 				<div class="flex-container first-section">
-					<figure>
+					<div class="knowleges">
+						<p>Knowleges</p>
+						<ul>
+							<li>3° year of Computer Engineering</li>
+							<li>5 years experience</li>
+							<li>IBM</li>
+							<li>Tagview</li>
+						</ul>
+					</div>
+					<!--<figure>
 						<img class="icone shadow" src="src/img/icon_left.png" alt="experiences">
-						<figcaption class="ancoras-header">3° year of Computer Engineering, 5 years experience, IBM, Globo, <a href="http://officemall.com.br" target="_blank">Office Mall</a></figcaption>
-					</figure>
-						<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/w2bqyyUzLVE"></iframe>
-					<figure>
+						<figcaption class="ancoras-header">3° year of Computer Engineering, 5 years experience, IBM, Tagview, <a href="http://officemall.com.br" target="_blank">Office Mall</a></figcaption>
+					</figure>-->
+					<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/w2bqyyUzLVE"></iframe>
+					<div class="skills">
+						<p>Skills</p>
+						<ul>
+							<li>Ruby on Rails</li>
+							<li>Vue.js</li>
+							<li>CSS3</li>
+							<li>ES6</li>
+							<li>UX</li>
+						</ul>
+					</div>
+						<!--<figure>
 						<img class="icone shadow" src="src/img/icon_right.png" alt="knowleges">
 						<figcaption class="ancoras-header">Ruby on Rails, Vue.js, CSS3, ES6, UX, Git, SEO, <a href="https://www.mudamos.org/projetos" target="_blank">recent project</a></figcaption>
-					</figure>
+					</figure>-->
 				</div>
 			</section>
 
@@ -50,6 +69,7 @@
 							<img src="src/img/mudamos-web2.png" onclick="openModal();currentSlide(15)" class="hover-shadow slider-img">
 							<img src="src/img/globo1.png" onclick="openModal();currentSlide(16)" class="hover-shadow slider-img">
 							<img src="src/img/globo2.png" onclick="openModal();currentSlide(17)" class="hover-shadow slider-img">
+							<img src="src/img/officemall.png" onclick="openModal();currentSlide(18)" class="hover-shadow slider-img">
 						</div>
 					</div>
 					<div id="myModal" class="modal">
@@ -123,6 +143,10 @@
 								<img src="src/img/globo2.png" class="modal-img">
 								<p class="caption-container">Globo project mobile</p>
 							</div>
+							<div class="mySlides">
+								<img src="src/img/officemall.png" class="modal-img">
+								<p class="caption-container">My ecommerce frontpage</p>
+							</div>
 							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
 						</div>
@@ -137,6 +161,7 @@
 						</div>
 						<div class="html-pretty">
 							<pre class="prettyprint">
+								
 	// var pagamento = req.body
 	var pagamento = req.body;
 	console.log('Procesing payment');
