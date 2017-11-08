@@ -190,14 +190,12 @@ figcaption {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    padding: 3vh;
     color: white;
     background-color: #340040;
     font-weight: bold;
-    font-size: 20px;
     transition: 0.6s ease;
-    border-radius: 5vw;
+    border-radius: 50%;
     user-select: none;
     -webkit-user-select: none;
 }
