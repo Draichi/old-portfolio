@@ -27,7 +27,7 @@
 .text-header {
     text-align: center;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 5vw;
     padding: 3vh 0 5vh 0;
 }
 
@@ -294,8 +294,6 @@ pre .dec { color: #98fb98 } /* decimal         - lightgreen */
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin-top: 0; margin-bottom: 0; color: #AEAEAE } /* IE indents via margin-left */
 li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
-/* Alternate shading for lines */
-li.L1,li.L3,li.L5,li.L7,li.L9 { }
 
 @media print {
   pre.prettyprint { background-color: none }
@@ -316,7 +314,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     position: absolute;
     left: 30%;
     right: 30%;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
     
 }
 
@@ -346,7 +344,9 @@ a {
 @media screen and (max-width: 500px) {
 
     .text-header {
-        font-size: 1.6rem;
+        font-size: 9vw;
+        padding: 3vh 0 0 0;
+        
     }
 
     .flex-container {
@@ -372,10 +372,6 @@ a {
         min-height: initial;
         min-width: initial;
         max-width: 80vw;
-    }
-
-    .text-header {
-        padding: 3vh 0 0 0;
     }
 
     .first-section .icone {
