@@ -78,11 +78,12 @@ figure {
 .knowleges, .skills {
     width: 33.20vw;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
+    text-transform: uppercase;
 }
 
 .knowleges p, .skills p {
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: bold;
 }
 
@@ -275,6 +276,7 @@ img.hover-shadow {
     width: 15vw;
     object-fit: cover;
     margin: 1vh;
+    cursor: pointer;
 }
 
 
