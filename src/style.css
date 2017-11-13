@@ -43,8 +43,8 @@
 }
 
 .video {
-    min-width: 35vw;
-    min-height: 40vh;
+    width: 33.2vw;
+    min-height: 38vh;
 }
 
 figcaption a {
@@ -52,7 +52,7 @@ figcaption a {
 }
 
 .shadow-strong {
-    box-shadow: 3px 3px 20px 1px rgba(196, 196, 196, .75);
+    box-shadow: 0 0 20px 1px rgba(196, 196, 196, .75);
 }
 
 .shadow {
@@ -368,14 +368,19 @@ a {
         width: 90vw;
     }
 
-    .knowleges {
+    .knowleges, .skills {
         width: 90vw;
+        font-size: 5vw;
+    }
+    
+    .knowleges p, .skills p {
+        font-size: 7vw;
     }
 
     .video {
-        min-height: initial;
-        min-width: initial;
-        max-width: 80vw;
+        width: 85vw;
+        min-height: 28vh;
+        margin: 2.5vh;
     }
 
     .first-section .icone {
