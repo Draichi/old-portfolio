@@ -52,7 +52,7 @@ figcaption a {
 }
 
 .shadow-strong {
-    box-shadow: 0px 18px 46px 1px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 20px 1px rgba(196, 196, 196, .75);
 }
 
 .shadow {
@@ -78,6 +78,12 @@ figure {
 .knowleges, .skills {
     width: 33.20vw;
     text-align: center;
+    font-size: 3vw;
+}
+
+.knowleges p, .skills p {
+    font-size: 5vw;
+    font-weight: bold;
 }
 
 ul {
@@ -91,22 +97,20 @@ figcaption {
 
 #fullpage section:nth-child(4) {
     background-color: #F2055C;
-    background-attachment: fixed;
 }
 
 #fullpage section:nth-child(1) {
-    background: #07F2F2;
-    background-attachment: fixed;
+    background: url('img/background2.png') no-repeat fixed;
+    background-size: cover;
+    color: #fff;
 }
 
 #fullpage section:nth-child(2) {
     background: #05F26C;
-    background-attachment: fixed;
 }
 
 #fullpage section:nth-child(3) {
     background: #EAF205;
-    background-attachment: fixed;
 }
 
 /*start lightbox*/
