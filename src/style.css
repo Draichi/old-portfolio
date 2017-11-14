@@ -13,15 +13,8 @@
     color: #340040;
 }
 
-#fullpage section h1 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    line-height: 100vh;
-    font-size: 10em;
-    color: #340040;
-    transform: translate(200px, 150px) opacity(0.3);
-    
+#fullpage section:nth-child(1) h2 {
+    font-size: 3vw;
 }
 
 .text-header {
@@ -326,6 +319,10 @@ li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
 
 .footer {
     padding-top: 12vw;
+}
+
+h3 {
+    color: #fffbea;
 }
 
 .footer-caption-txt {
