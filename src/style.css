@@ -94,7 +94,7 @@ figcaption {
 }
 
 #fullpage section:nth-child(1) {
-    background: url('img/background2.png') no-repeat fixed;
+    background: url('../src/img/background2.png') no-repeat fixed;
     background-size: cover;
     color: #fff;
 }
@@ -339,9 +339,13 @@ h3 {
 }
 
 a {
-    color: #340040;
     text-decoration: none;
 }
+
+li a {
+    color: #fff;
+    text-decoration: underline;
+} 
 
 /*MOBILE*/
 @media screen and (max-width: 500px) {

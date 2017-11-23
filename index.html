@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="src/style.css">
+		<link rel="stylesheet" type="text/css" href="dist/style.css">
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" type="image/png" href="/src/img/favicon-16x16.png"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -20,21 +20,22 @@
 						<p>Experiences</p>
 						<ul>
 							<li>Computer Engineering</li>
-							<li>5 years experience</li>
+							<li>Since 2012</li>
 							<li>Tagview</li>
 							<li>IBM</li>
+							<li><a href="http://officemall.com.br" target="_blank">Office Mall</a></li>
 						</ul>
 					</div>
-					<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/smM5J1Gn8n8"></iframe>
+					<iframe class="video shadow-strong" frameborder="0" src="https://www.youtube.com/embed/fp6pDmnknR0"></iframe>
 					<div class="skills">
 						<p>Skills</p>
 						<ul>
 							<li>CSS3 (for real)</li>
 							<li>Ruby on Rails</li>
-							<li>Vue.js</li>
-							
+							<li>Vue/Vuex</li>
 							<li>ES6</li>
 							<li>UX</li>
+							<li><a href="https://www.mudamos.org/projetos" target="_blank">recent project</a></li>
 						</ul>
 					</div>
 				</div>
@@ -155,21 +156,24 @@
 						<div class="html-pretty">
 							<pre class="prettyprint">
 								
-	// var pagamento = req.body
-	var pagamento = req.body;
-	console.log('Procesing payment');
-
-	pagamento.status = 'CRIATED';
-	pagamento.data = new Date;
-	// var pagamento = req.body
-
-		if (erro) {
-			res.status(500).send(erro);
-			// var pagamento = req.body
-		} else {
-			res.status(201).json(pagamento);
+	// sample of 'panels-in-vue' code
+	export default class JobService {
+		constructor (resource) {
+			this._resource = resource('jobs{/id}')
 		}
-	});
+	// method to add a new job
+		addNew (job) {
+			// update if already has id
+			if (job._id) {
+				return this._resource
+					.update({id: job._id}, job)
+			} else {
+			// if not, add new
+				return this._resource
+					.save(job)
+			}
+		}
+	}
 						</pre>
 					</div>
 				</div>
@@ -183,9 +187,9 @@
 							<img class="icone animacao" src="src/img/icon_left.png" alt="github">
 						</figure>
 					</a>
-					<a href="https://cursos.alura.com.br/user/lucasdraichi" target="_blank">
+					<a href="https://www.linkedin.com/in/lucasdraichi/" target="_blank">
 						<figure class="trigger">
-							<figcaption class="text-header"><h3>skills</h3></figcaption>							
+							<figcaption class="text-header"><h3>linkedin</h3></figcaption>							
 							<img class="icone animacao" src="src/img/icon_right.png" alt="github">
 						</figure>
 					</a>
