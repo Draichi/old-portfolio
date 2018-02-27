@@ -58,7 +58,7 @@ figcaption a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 15vh;
+    padding-top: 25vh;
     max-height: 30vh;
 }
 
@@ -89,7 +89,7 @@ figcaption {
     font-size: 2vw;
 }
 
-a:-webkit-any-link {
+h3 {
     color: #340040;
 }
 
