@@ -89,8 +89,12 @@ figcaption {
     font-size: 2vw;
 }
 
+a:-webkit-any-link {
+    color: #340040;
+}
+
 #fullpage section:nth-child(4) {
-    background-color: #F2055C;
+    background-color: #07F2F2;
 }
 
 #fullpage section:nth-child(1) {
@@ -319,10 +323,6 @@ li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 { list-style-type: none }
 
 .footer {
     padding-top: 12vw;
-}
-
-h3 {
-    color: #fffbea;
 }
 
 .footer-caption-txt {
