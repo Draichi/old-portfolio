@@ -154,32 +154,20 @@
 						</div>
 						<div class="html-pretty">
 							<pre class="prettyprint">
-								
-	<!-- // sample of 'panels-in-vue' code
-	export default class JobService {
-		constructor (resource) {
-			this._resource = resource('jobs{/id}')
-		}
-	// method to add a new job
-		addNew (job) {
-			// update if already has id
-			if (job._id) {
-				return this._resource
-					.update({id: job._id}, job)
-			} else {
-			// if not, add new
-				return this._resource
-					.save(job)
-			}
-		}
-	} -->
-	// trick to never forget
-	// an "alt" attribute
-	// to make your website 
-	// accessible for all users
 	
-	img[alt=""], img:not([alt]) {
-		border: 5px dashed #c00;
+	// this is the 'user auth'
+	// if we have an user 
+	// logged in we proceed,
+	// if not, we'll be redirect
+
+	import { store } from '../store'
+
+	export default (to, from, next) => {  
+		if (store.getters.user) {
+			next()
+		} else {
+			next('/signin')
+		}
 	}
 						</pre>
 					</div>
