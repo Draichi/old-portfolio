@@ -1,7 +1,3 @@
-AOS.init({
-  duration: 1200
-});
-
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }

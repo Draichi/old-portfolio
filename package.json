@@ -17,9 +17,6 @@
     "url": "https://github.com/Draichi/portfolio/issues"
   },
   "homepage": "https://github.com/Draichi/portfolio#readme",
-  "dependencies": {
-    "aos": "^2.2.0"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
