@@ -98,7 +98,7 @@ h3 {
 }
 
 #fullpage section:nth-child(1) {
-    background: url('../src/img/background2.png') no-repeat fixed;
+    background: url('../src/img/background2-1.png') no-repeat fixed;
     background-size: cover;
     color: #fff;
 }
