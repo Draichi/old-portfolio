@@ -1,3 +1,20 @@
+var youtube = document.querySelectorAll(".youtube");
+for (var i=0; i<youtube.length; i++) {
+  var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg"
+  var image = new Image();
+    image.src = source;
+    image.addEventListener("load", function() {
+      youtube[i].appendChild(image);
+    }(i));
+  youtube[i].addEventListener("click", function() {
+    var iframe = document.createElement("iframe");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed)
+      this.innerHTML = "";
+      this.appendChild(iframe);
+  });
+}
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
