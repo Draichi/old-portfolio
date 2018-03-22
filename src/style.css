@@ -333,7 +333,8 @@ img.hover-shadow {
 }
 
 .img-code-sample {
-    height: 60vh;
+    max-height: 60vh;
+    padding-top: 10vh;
 }
 
 .footer {
