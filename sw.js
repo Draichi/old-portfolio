@@ -3,8 +3,9 @@ self.addEventListener('install', function(event) {
     caches.open('static')
       .then(function(cache) {
         return cache.addAll([
-          '/portfolio/dist/index.js',
-          '/portfolio/dist/style.css'
+          'https://draichi.github.io/portfolio',
+          'https://draichi.github.io/portfolio/dist/index.js',
+          'https://draichi.github.io/portfolio/dist/style.css'
         ]);
       })
   );
