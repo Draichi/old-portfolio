@@ -14,10 +14,10 @@ self.addEventListener('install', function(event) {
 self.addEventListener('activate', function() {
   console.log("sw activate");
 });
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    fetch(event.request).catch(function() {
-      return caches.match(event.request);
-    })
-  );
+self.addEventListener('fetch', event => {
+  event.respondWith(async function() {
+    const cachedResponse = await caches.match(event.request);
+    if (cachedResponse) return cachedResponse;
+    return fetch(event.request);
+  }());
 });
