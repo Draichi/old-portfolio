@@ -1,7 +1,7 @@
 {
   "name": "Lucas Draichi portfolio",
   "short_name": "Portfolio",
-  "start_url": "/portfolio/index.html",
+  "start_url": "https://draichi.github.io/portfolio/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#340040",
