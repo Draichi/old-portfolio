@@ -1,6 +1,7 @@
 var gulp = require('gulp')
   ,uglify = require('gulp-uglify')
   ,cssmin = require('gulp-cssmin')
+  ,jsonminify = require('gulp-jsonminify')
   ,clean = require('gulp-clean');
 
 gulp.task('copy', ['clean'], function(){
@@ -19,6 +20,12 @@ gulp.task('build-js', function(){
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('build-json', function(){
+  return gulp.src('dist/*.json')
+    .pipe(jsonminify())
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('build-css', function(){
   return gulp.src('dist/*.css')
     .pipe(cssmin())
@@ -26,5 +33,5 @@ gulp.task('build-css', function(){
 });
 
 gulp.task('default', ['copy'], function() {
-  gulp.start(['build-js', 'build-css']);
+  gulp.start(['build-js', 'build-json', 'build-css']);
 });
