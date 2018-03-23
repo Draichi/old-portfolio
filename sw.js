@@ -21,7 +21,7 @@ self.addEventListener('fetch', function(event) {
         if (res) {
           return res;
         } else {
-          return fetch(event.request, {cache: "force-cache"});
+          return fetch(event.request, {credentials: 'include'});
         }
       })
   );
