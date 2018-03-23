@@ -1,5 +1,4 @@
 self.addEventListener('install', function(event) {
-  console.log("sw installed");
   event.waitUntil(
     caches.open('static')
       .then(function(cache) {
@@ -22,7 +21,7 @@ self.addEventListener('fetch', function(event) {
         if (res) {
           return res;
         } else {
-          return fetch(event.request);
+          return fetch(event.request, {cache: "force-cache"});
         }
       })
   );
