@@ -1,7 +1,7 @@
 {
   "name": "Lucas Draichi portfolio",
   "short_name": "Portfolio",
-  "start_url": "/index.html",
+  "start_url": "/portfolio/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#340040",
