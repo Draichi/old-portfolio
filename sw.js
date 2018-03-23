@@ -2,7 +2,7 @@ var cacheName = 'static';
 var filesToCache = [
   'https://draichi.github.io/portfolio/index.html',
   '/portfolio/index.html',
-  '/portfolio',
+  '/portfolio/',
   'https://draichi.github.io/portfolio/dist/index.js',
   'https://draichi.github.io/portfolio/dist/style.css'
 ];
