@@ -55,7 +55,7 @@ function showSlides(n) {
 /*end slides*/
 
 /*service worker*/
-navigator.serviceWorker.register('../sw.js')
+navigator.serviceWorker.register('https://draichi.github.io/portfolio/sw.js')
   .then(function() {
     console.log('sw registered');
   });
