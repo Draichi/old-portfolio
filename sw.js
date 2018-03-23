@@ -1,23 +1,39 @@
+var cacheName = 'static';
+var filesToCache = [
+  'https://draichi.github.io/portfolio',
+  'https://draichi.github.io/portfolio/dist/index.js',
+  'https://draichi.github.io/portfolio/dist/style.css'
+];
+
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('static')
-      .then(function(cache) {
-        return cache.addAll([
-          'https://draichi.github.io/portfolio',
-          'https://draichi.github.io/portfolio/dist/index.js',
-          'https://draichi.github.io/portfolio/dist/style.css'
-        ]);
+    caches.open(cacheName)
+      .then(cache => {
+        return cache.addAll(filesToCache);
+      })
+      .then(() => {
+        return self.skipWaiting();
       })
   );
-  console.log("sw installed!!!");
 });
-self.addEventListener('activate', function() {
-  console.log("sw activate");
+
+self.addEventListener('activate', e => {
+  e.waitUntil(
+    caches.keys()
+      .then(keyList => {
+        return Promise.all(keyList.map(key => {
+          if (key !== cacheName) return caches.delete(key);
+        }));
+      })
+  );
+  return self.clients.claim();
 });
+
 self.addEventListener('fetch', event => {
-  event.respondWith(async function() {
-    const cachedResponse = await caches.match(event.request);
-    if (cachedResponse) return cachedResponse;
-    return fetch(event.request);
-  }());
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
+      })
+  );
 });
