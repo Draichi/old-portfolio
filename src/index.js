@@ -60,3 +60,24 @@ navigator.serviceWorker.register('https://draichi.github.io/portfolio/sw.js')
     console.log('sw registered');
   });
 /*end service worker*/
+
+/*fade on scroll*/
+var onEnterViewPort = function(entries, observer) {
+  entries.forEach(function(entry) {
+    console.log(entry);
+    // fade in when we enter the viewport
+    if (entry.intersectionRatio !== 0) {
+      entry.target.classList.add('in');
+    }
+    // fade back out when we leave the viewport
+    else {
+      entry.target.classList.remove('in');
+    }
+  })
+}
+var observer = new IntersectionObserver(onEnterViewPort, {});
+var textHeader = document.querySelectorAll('.text-header');
+for (var i = 0; i < textHeader.length; ++i) {
+  observer.observe(textHeader[i]);
+}
+/*end fade on scroll*/
