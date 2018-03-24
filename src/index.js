@@ -64,7 +64,6 @@ navigator.serviceWorker.register('https://draichi.github.io/portfolio/sw.js')
 /*fade on scroll*/
 var onEnterViewPort = function(entries, observer) {
   entries.forEach(function(entry) {
-    console.log(entry);
     // fade in when we enter the viewport
     if (entry.intersectionRatio !== 0) {
       entry.target.classList.add('in');
