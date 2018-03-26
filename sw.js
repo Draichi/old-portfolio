@@ -1,4 +1,4 @@
-var cacheName = 'static';
+var cacheName = 'static-1.0.0';
 var filesToCache = [
   'https://draichi.github.io/portfolio/index.html',
   '/portfolio/index.html',
