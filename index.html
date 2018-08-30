@@ -1,13 +1,13 @@
 <html lang="en">
 	<head>
-		<link media="screen" rel="stylesheet" type="text/css" href="https://draichi.github.io/portfolio/dist/style.css">
+		<link media="screen" rel="stylesheet" type="text/css" href="dist/style.css">
 		<meta charset="UTF-8">
 		<link defer rel="shortcut icon" type="image/png" href="src/img/favicon-16x16.png"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Lucas Draichi portfolio webpage">
 		<meta name="theme-color" content="#05F26C">
-		<link rel="manifest" href="https://draichi.github.io/portfolio/dist/manifest.json">
+		<link rel="manifest" href="dist/manifest.json">
 		<title>Lucas Draichi</title>
 		
 	</head>
@@ -47,15 +47,19 @@
 					<div>
 						<h2 class="text-header">portfolio</h2>
 						<div class="flex-portfolio">
-							<img
-								src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm20-1-150w.png"
-								srcset="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm20-1-90w.png 500w,
-												https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm20-1-150w.png 1024w"
-								sizes="(max-width: 500px) 500px, 100vw"
-								onclick="openModal();currentSlide(1)"
-								class="hover-shadow slider-img"
-								alt="ibm web page sreeenshot"
-							>
+							<div class="container">
+								<img
+									src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm20-1-150w.png"
+									srcset="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm20-1-90w.png 500w,
+													https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm20-1-150w.png 1024w"
+									sizes="(max-width: 500px) 500px, 100vw"
+									class="hover-shadow slider-img"
+									alt="ibm web page sreeenshot"
+								>
+									<div class="overlay" onclick="openModal();currentSlide(1)">
+									<div class="text">IBM project</div>
+								</div>
+							</div>
 							<img 
 								src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm19-1-150w.png"
 								srcset="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ibm19-1-90w.png 500w,
@@ -156,10 +160,10 @@
 								alt="web page sreeenshot"
 							>
 							<img
-								src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ai.gif"
+								src="https://raw.githubusercontent.com/Draichi/blockchain/master/blockchain_running.gif"
 								onclick="openModal();currentSlide(13)"
 								class="hover-shadow slider-img"
-								alt="ai playing cartpole"
+								alt="bloxkchain"
 							>
 							<img
 								src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/mudamos-web1-1-150w.png"
@@ -189,17 +193,14 @@
 								alt="web page sreeenshot"
 							>
 							<img
-								src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/globo2-1-150w.png"
-								srcset="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/globo2-1-90w.png 500w,
-												https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/globo2-1-150w.png 1024w"
+								src="https://raw.githubusercontent.com/Draichi/cryptocurrency_prediction/master/imgs/evaluating.gif"
 								onclick="openModal();currentSlide(17)"
-								sizes="(max-width: 500px) 500px, 100vw"
 								class="hover-shadow slider-img"
 								alt="web page sreeenshot"
 							>
 							<img
-								src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/object_detection.gif"
-								alt="web page sreeenshot"
+								src="https://raw.githubusercontent.com/Draichi/ai-starcraft/master/AI-vs-HardBot.gif"
+								alt="ai ai-starcraft"
 								onclick="openModal();currentSlide(18)"
 								class="hover-shadow slider-img"
 							>
@@ -342,11 +343,11 @@
 							</div>
 							<div class="mySlides">
 								<img
-									src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/ai.gif"
+									src="https://raw.githubusercontent.com/Draichi/blockchain/master/blockchain_running.gif"
 									class="modal-img"
 									alt="web page sreeenshot"
 								>
-								<p class="caption-container">Machine learning playing cart pole, <a href="https://github.com/Draichi/Deep-Learning">source</a></p>
+								<p class="caption-container">https://raw.githubusercontent.com/Draichi/blockchain/master/blockchain_running.gif</p>
 							</div>
 							<div class="mySlides">
 								<img
@@ -383,22 +384,19 @@
 							</div>
 							<div class="mySlides">
 								<img
-									src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/globo2-1-520h.png"
-									srcset="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/globo2-1-520h.png 500w,
-													https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/globo2-1.png 1024w"
-									sizes="(max-width: 500px) 500px, 100vw"
+									src="https://raw.githubusercontent.com/Draichi/cryptocurrency_prediction/master/imgs/evaluating.gif"
 									class="modal-img"
 									alt="web page sreeenshot"
 								>
-								<p class="caption-container">Globo project mobile</p>
+								<p class="caption-container">https://raw.githubusercontent.com/Draichi/cryptocurrency_prediction/master/imgs/evaluating.gif</p>
 							</div>
 							<div class="mySlides">
 								<img
-									src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/object_detection.gif"
+									src="https://raw.githubusercontent.com/Draichi/ai-starcraft/master/AI-vs-HardBot.gif"
 									class="modal-img"
 									alt="web page sreeenshot"
 								>
-								<p class="caption-container">TensorFlow object detection on video, <a href="https://github.com/Draichi/models/tree/master/research/object_detection">source</a></p>
+								<p class="caption-container">https://raw.githubusercontent.com/Draichi/ai-starcraft/master/AI-vs-HardBot.gif</p>
 							</div>
 							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 							<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -424,22 +422,16 @@
 			</section>
 			
 			<section>
-				<div class="flex-container footer">
+				<div class="flex-container">
 					<a href="https://github.com/Draichi" rel="noopener" target="_blank">
 						<figure class="trigger">
 							<figcaption class="text-header"><h3>github</h3></figcaption>							
-							<img class="icone animacao" src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/icon_left-1.png" alt="github">
-						</figure>
-					</a>
-					<a href="https://github.com/Draichi/portfolio" rel="noopener" target="_blank">
-						<figure class="trigger">
-							<figcaption class="text-header"><h3>source</h3></figcaption>							
-							<img class="icone animacao" src="https://raw.githubusercontent.com/Draichi/portfolio/master/src/img/icon_right-1.png" alt="github">
+							<img class="icone animacao" src="src/img/Octocat/Octocat.png" alt="github">
 						</figure>
 					</a>
 				</div>
 			</section>
 		</div>
-		<script src="https://draichi.github.io/portfolio/dist/index.js" defer></script>
+		<script src="dist/index.js" defer></script>
 	</body>
 </html>
