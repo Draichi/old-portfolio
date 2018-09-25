@@ -113,13 +113,14 @@ figure {
 
 .knowleges, .skills {
     width: 33.20vw;
+    padding: 4vw;
     text-align: center;
     font-size: 2vw;
     text-transform: uppercase;
 }
 
 .knowleges p, .skills p {
-    font-size: 4vw;
+    font-size: 2.3vw;
     font-weight: bold;
 }
 
@@ -571,6 +572,10 @@ li a {
 
     figure {
         width: 90vw;
+    }
+
+    .first-section {
+        padding-top: 30vh;
     }
 
     .knowleges, .skills {
